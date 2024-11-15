@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(248, 248, 252);
+}
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e40af;
+    max-height: 450px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: rgba(12, 12, 12, 0.442) 0px 30px 90px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+}
+.form2 {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+}
+
+#chk {
+    display: none;
+}
+.login  {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.login label {
+    margin: 5% 0 5%;
+}
+label  {
+   color: rgb(6, 0, 12);
+   font-size: 2rem;
+   justify-content: center;
+   display: flex;
+   font-weight: bold;
+   cursor: pointer;
+   transition: .5s ease-in-out;
+  }
+.input  {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    background: rgb(248, 245, 245);
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.inputt  {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 4px;
+}
+.register  {
+    background: rgb(250, 246, 246);
+    border-radius: 60% / 10%;
+    transition: .8s ease-in-out;
+}
+.register label {
+    color: rgb(219, 166, 96);
+    transform: scale(.6);
+}
+#chk:checked ~ .register {
+    transform: translateY(-68%);
+}  
+#chk:checked ~ .register label {
+    transform: scale(1);
+    margin-bottom: .5rem;
+}  
+#chk:checked ~ .login label {
+    transform: scale(6);
+}
+.form button{
+    width: 70%;
+    height: 40px;
+    margin: 15px auto 10%;
+    color: rgb(10, 10, 10);
+    background: rgb(250, 246, 246);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+.form button:hover{
+    background-color: rgb(219, 166, 96);
+}
+.form2 button{
+    width: 70%;
+    height: 40px;
+    margin: 15px auto 10%;
+    color: rgb(10, 10, 10);
+    background:  rgb(250, 246, 246);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+.form2 button:hover{
+    background-color: rgb(219, 166, 96);
+}
